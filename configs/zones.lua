@@ -1,5 +1,5 @@
--- Zone: Testing in Straat: Strawberry Ave,
--- Gemaakt door: MaDHouSe - Datum: 2022/11/02 Time 11:06:17,
+-- Zone: Testing in Street: Strawberry Ave,
+-- Created by: MaDHouSe - Date: 2022/11/02 Time 11:06:17,
 Config.Zones['Testing'] = {
     ['Zone'] = {
         ['Shape'] = {
