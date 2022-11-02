@@ -29,15 +29,15 @@ local function addZeroForLessThan10(number)
 end
 
 local function generateDateTime()
-	local dateTimeTable = os.date('*t')
-	local dateTime = ""..dateTimeTable.year .."/".. addZeroForLessThan10(dateTimeTable.month) .."/"..  addZeroForLessThan10(dateTimeTable.day) .." Time: "..  addZeroForLessThan10(dateTimeTable.hour) ..":".. addZeroForLessThan10(dateTimeTable.min) ..":".. addZeroForLessThan10(dateTimeTable.sec)
-	return dateTime
+    local dateTimeTable = os.date('*t')
+    local dateTime = ""..dateTimeTable.year .."/".. addZeroForLessThan10(dateTimeTable.month) .."/"..  addZeroForLessThan10(dateTimeTable.day) .." Time: "..  addZeroForLessThan10(dateTimeTable.hour) ..":".. addZeroForLessThan10(dateTimeTable.min) ..":".. addZeroForLessThan10(dateTimeTable.sec)
+    return dateTime
 end
 
 local function WriteZoneData(id, zones, street)
     local src = source
     local path = GetResourcePath(GetCurrentResourceName())
-	path = path:gsub('//', '/')..'/configs/zones.lua'
+    path = path:gsub('//', '/')..'/configs/zones.lua'
     local file = io.open(path, 'a+')
     local createDate = generateDateTime()
     local sender = QBCore.Functions.GetPlayer(src).PlayerData
@@ -46,7 +46,7 @@ local function WriteZoneData(id, zones, street)
     file:write("Config.Zones['"..('%s'):format(zoneName).."'] = {\n")
     file:write("    ['Zone'] = {\n")
     file:write("        ['Shape'] = {\n")
-	for k, v in pairs(zones) do
+    for k, v in pairs(zones) do
         for _, point in pairs(v.points) do
             file:write(("            vector2(%s, %s),\n"):format(point.x, point.y))
         end
@@ -55,10 +55,10 @@ local function WriteZoneData(id, zones, street)
         file:write(("        minZ = %s,\n"):format(v.minZ - 1))
         file:write(("        maxZ = %s,\n"):format(v.maxZ + 2))
         file:write(("        debugPoly = %s,\n"):format(false))
-    file:write("    },\n")
+        file:write("    },\n")
     end
     file:write("}\n")
-   	file:close()
+    file:close()
     TriggerClientEvent('QBCore:Notify', src, Lang:t('notify.zone_saved'), "success")
     TriggerClientEvent('mh-polycreator:client:ToggleCreateMode', src, false)
 end
