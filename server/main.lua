@@ -3,7 +3,6 @@
 --[[ ===================================================== ]]--
 
 local QBCore = exports['qb-core']:GetCoreObject()
-
 local isCreateMode = false 
 local zoneName = nil
 local blipName = nil
@@ -31,7 +30,7 @@ end
 
 local function generateDateTime()
 	local dateTimeTable = os.date('*t')
-	local dateTime = ""..dateTimeTable.year .."/".. addZeroForLessThan10(dateTimeTable.month) .."/"..  addZeroForLessThan10(dateTimeTable.day) .." Time "..  addZeroForLessThan10(dateTimeTable.hour) ..":".. addZeroForLessThan10(dateTimeTable.min) ..":".. addZeroForLessThan10(dateTimeTable.sec)
+	local dateTime = ""..dateTimeTable.year .."/".. addZeroForLessThan10(dateTimeTable.month) .."/"..  addZeroForLessThan10(dateTimeTable.day) .." Time: "..  addZeroForLessThan10(dateTimeTable.hour) ..":".. addZeroForLessThan10(dateTimeTable.min) ..":".. addZeroForLessThan10(dateTimeTable.sec)
 	return dateTime
 end
 
@@ -42,8 +41,8 @@ local function WriteZoneData(id, zones, street)
     local file = io.open(path, 'a+')
     local createDate = generateDateTime()
     local sender = QBCore.Functions.GetPlayer(src).PlayerData
-    file:write("-- "..Lang:t('data.created_zone', {zone = zoneName, street = street}).."\n")
-    file:write("-- "..Lang:t('data.created_by', {name = sender.name, date = createDate}).."\n")
+    file:write(("-- %s,\n"):format(Lang:t('data.created_zone', {zone = zoneName, street = street})))
+    file:write(("-- %s,\n"):format(Lang:t('data.created_by', {name = sender.name, date = createDate})))
     file:write("Config.Zones['"..('%s'):format(zoneName).."'] = {\n")
     file:write("    ['Zone'] = {\n")
     file:write("        ['Shape'] = {\n")
