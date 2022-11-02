@@ -39,3 +39,9 @@ Config.Zones['MaDHouSe'] = {
     }, -- <-- Zone Block (End)
 }
 ```
+
+## 🐞 Any bugs issues or suggestions, let my know. 👊😎
+
+## 🙈 Youtube & Discord
+- [Youtube](https://www.youtube.com/@MaDHouSe79) for videos
+- [Discord](https://discord.gg/cEMSeE9dgS)
