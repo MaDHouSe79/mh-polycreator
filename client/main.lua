@@ -64,7 +64,7 @@ local function DrawALine(position, coords, color)
     DrawLine(position.x, position.y, position.z, coords.x, coords.y, coords.z, color.r, color.g, color.b, color.a)
 end
 
-function RunViewThread()
+local function RunViewThread()
     ViewEnabled = true
     Citizen.CreateThread(function()
         while ViewEnabled do
