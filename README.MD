@@ -1,10 +1,10 @@
 ### mh-polycreator
-- This script wil help you to create polyzones very easy
-- this create a polyzone in game, so you are able to make the polyzones very precise where you want it.
+- This script wil help you to create polyzones ingame very easy
+- you are able to make the polyzones very precise where you want it.
 - as big or small as you want, all the code you need for your polyzone will be saved inside `configs/zones.lua`
 
 
-### Commands
+### How to use the commands
 - To begin typ `/createzone [zonename]` 
 - - you will see a white line so you can point to a location where you want to place a poly point.
 - if there is already a zone with this name you get a notify and you have to,  
