@@ -5,8 +5,8 @@
 
 
 ### Install
-- create a folder `[mh]` in your `resources` folder, that place `mh-polycreator` inside `[mh]`
-- open your server.sfg and add `ensure [mh]` then restart your server.
+- create a folder `[mh]` in your `resources` folder, that place `mh-polycreator` inside `[mh]` folder
+- open your server.cfg and add `ensure [mh]` then restart your server.
 
 
 ### How to use the commands
