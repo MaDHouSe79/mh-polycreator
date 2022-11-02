@@ -5,8 +5,8 @@ local Translations = {
         ['zone_saved'] = "The zone is saved in (configs/zones.lua) file..",
     },
     data = {
-        ['created_zone'] = "Created By: %{name} - Date: %{date}",
-        ['created_by'] = "Zone: %{zone} in Street: %{street}",
+        ['created_by'] = "Created By: %{name} - Date: %{date}",
+        ['created_zone'] = "Zone: %{zone} in Street: %{street}",
         ['create_zone'] = "Create zone [name]",
         ['type_zone_name'] = "Type a zone name.",
     }
