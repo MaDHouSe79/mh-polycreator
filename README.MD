@@ -5,7 +5,7 @@
 
 
 ### Commands
-- To begin typ `/create-zone [zonename]` 
+- To begin typ `/createzone [zonename]` 
 - - you will see a white line so you can point to a location where you want to place a poly point.
 - if there is already a zone with this name you get a notify and you have to,  
 - - 1: delete this from the zones.lua 
