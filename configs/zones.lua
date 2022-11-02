@@ -1,16 +1,16 @@
--- Gemaakt door: %{name} - Datum: %{date}
--- Zone: %{zone} in Straat: %{street}
-Config.Zones['MaDHouSe'] = {
+-- Zone: Testing in Straat: Strawberry Ave,
+-- Gemaakt door: MaDHouSe - Datum: 2022/11/02 Time 11:06:17,
+Config.Zones['Testing'] = {
     ['Zone'] = {
         ['Shape'] = {
-            vector2(239.43424987793, -753.51196289062),
-            vector2(245.28369140625, -755.63293457031),
-            vector2(243.78074645996, -759.85168457031),
-            vector2(237.9564666748, -757.67700195312),
+            vector2(209.73970031738, -936.5283203125),
+            vector2(206.48246765137, -941.20812988281),
+            vector2(201.56884765625, -937.75714111328),
+            vector2(204.84262084961, -933.10949707031),
         },
-        name = 'zone_madhouse',
-        minZ = 27.826507568359,
-        maxZ = 33.826507568359,
+        name = 'zone_testing',
+        minZ = 27.69179725647,
+        maxZ = 33.69179725647,
         debugPoly = false,
     },
 }
