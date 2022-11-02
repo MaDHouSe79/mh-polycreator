@@ -24,7 +24,7 @@
 - - You need to look at the point you want to remove. 
 - - - use the white line on ground point as a guideline to remove your point
 - 
-- Prees [`G`] save the polyzone in the `configs/zones.lua` file
+- Press [`G`] save the polyzone in the `configs/zones.lua` file
 - - this file is located in `configs` folder file name `zones.lua`
 - You can now copy the code in `configs/zones.lua` and use it in other scripts that uses polyzone.
 
