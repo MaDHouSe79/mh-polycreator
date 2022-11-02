@@ -14,4 +14,3 @@ Config.Zones['Testing'] = {
         debugPoly = false,
     },
 }
-
