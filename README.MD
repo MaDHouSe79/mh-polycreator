@@ -31,9 +31,9 @@
 
 
 ### Example Created Zone
-- you only need the `Zone Block` from `start` to `end` for other scripts that uses polyzone.
+- you only need the `Zone Block` from `(Zone Block (Start))` to `(Zone Block (End))` for other scripts that uses polyzone.
 - you maby have to change the `Zone` and or `Shape` name to the needs of the script you are using, 
-- cause not every script uses `Zone` and or `Shape`.
+- cause not every script use the name `Zone` and or `Shape`. so change this if needed.
 ```lua
 
 -- Zone: Testing in Street: Strawberry Ave,
