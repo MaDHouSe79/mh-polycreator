@@ -24,20 +24,24 @@
 ### Example Created Zone
 - you only need the `Zone Block` from `start` to `end` for other scripts that uses polyzone.
 ```lua
-Config.Zones['MaDHouSe'] = {
+
+-- Zone: Testing in Street: Strawberry Ave,
+-- Created by: MaDHouSe - Date: 2022/11/02 Time 11:06:17,
+Config.Zones['Testing'] = {
     ['Zone'] = { -- <--- Zone Block (Start)
         ['Shape'] = {
-            vector2(239.43424987793, -753.51196289062),
-            vector2(245.28369140625, -755.63293457031),
-            vector2(243.78074645996, -759.85168457031),
-            vector2(237.9564666748, -757.67700195312),
+            vector2(209.73970031738, -936.5283203125),
+            vector2(206.48246765137, -941.20812988281),
+            vector2(201.56884765625, -937.75714111328),
+            vector2(204.84262084961, -933.10949707031),
         },
-        name = 'zone_madhouse',
-        minZ = 27.826507568359,
-        maxZ = 33.826507568359,
+        name = 'zone_testing',
+        minZ = 27.69179725647,
+        maxZ = 33.69179725647,
         debugPoly = false,
     }, -- <-- Zone Block (End)
 }
+
 ```
 
 ## 🐞 Any bugs issues or suggestions, let my know. 👊😎
