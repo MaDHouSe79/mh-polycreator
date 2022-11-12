@@ -13,10 +13,17 @@
   <a href="https://github.com/MaDHouSe79/mh-polycreator/stargazers">
     <img src="https://img.shields.io/github/stars/MaDHouSe79/mh-polycreator"/> 
   </a>
+  <a href="https://github.com/MaDHouSe79/mh-polycreator/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/MaDHouSe79/mh-polycreator?color=black"/> 
+  </a> 
 </p>
 
 <p align="center">
   <img alig src="https://github-profile-trophy.vercel.app/?username=MaDHouSe79&margin-w=15&column=6" />
+</p>
+
+<p align="center">
+<img alig src="https://raw.githubusercontent.com/kamranahmedse/driver.js/master/demo/images/split.png" />
 </p>
 
 ### mh-polycreator (dev tool)
@@ -32,23 +39,27 @@
 
 ### How to use the commands
 - To begin typ `/createzone [zonename]` 
-- - you will see a white line so you can point to a location where you want to place a poly point.
+- 1. you will see a white line so you can point to a location where you want to place a poly point.
 - if there is already a zone with this name you get a notify and you have to,  
-- - 1: delete this from the zones.lua 
-- - 2: use a other zone name.
+- 1. delete this from the zones.lua 
+- 2. use a other zone name.
 -
 - Press [`E`] to create a poly point on point of view 
-- - You will see a red line when you press `E`
-- - - use the white line on ground point as a guideline to add your point
+- 1. You will see a red line when you press `E`
+- 2. use the white line on ground point as a guideline to add your point
 - 
 - Press [`F`] to remove a point on point of view
-- - You need to look at the point you want to remove. 
-- - - use the white line on ground point as a guideline to remove your point
+- 1. You need to look at the point you want to remove. 
+- 2. use the white line on ground point as a guideline to remove your point
 - 
 - Press [`G`] save the polyzone in the `configs/zones.lua` file
-- - this file is located in `configs` folder file name `zones.lua`
+- 1. this file is located in `configs` folder file name `zones.lua`
 - You can now copy the code in `configs/zones.lua` and use it in other scripts that uses polyzone.
 
+
+<p align="center">
+<img alig src="https://raw.githubusercontent.com/kamranahmedse/driver.js/master/demo/images/split.png" />
+</p>
 
 
 ### Example Created Zone
@@ -75,6 +86,9 @@ Config.Zones['Testing'] = {
 }
 
 ```
+<p align="center">
+<img alig src="https://raw.githubusercontent.com/kamranahmedse/driver.js/master/demo/images/split.png" />
+</p>
 
 ## 🐞 Any bugs issues or suggestions, let my know. 👊😎
 
