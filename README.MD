@@ -22,9 +22,6 @@
   <img alig src="https://github-profile-trophy.vercel.app/?username=MaDHouSe79&margin-w=15&column=6" />
 </p>
 
-<p align="center">
-<img alig src="https://raw.githubusercontent.com/kamranahmedse/driver.js/master/demo/images/split.png" />
-</p>
 
 ### mh-polycreator (dev tool)
 - This script wil help you to create polyzones ingame very easy
@@ -57,11 +54,6 @@
 - You can now copy the code in `configs/zones.lua` and use it in other scripts that uses polyzone.
 
 
-<p align="center">
-<img alig src="https://raw.githubusercontent.com/kamranahmedse/driver.js/master/demo/images/split.png" />
-</p>
-
-
 ### Example Created Zone
 - you only need the `Zone Block` from `(Zone Block (Start))` to `(Zone Block (End))` for other scripts that uses polyzone.
 - you maby have to change the `Zone` and or `Shape` name to the needs of the script you are using, 
@@ -84,17 +76,11 @@ Config.Zones['Testing'] = {
         debugPoly = false,
     }, -- <-- Zone Block (End)
 }
-
 ```
-<p align="center">
-<img alig src="https://raw.githubusercontent.com/kamranahmedse/driver.js/master/demo/images/split.png" />
-</p>
 
-## 🐞 Any bugs issues or suggestions, let my know. 👊😎
 
-## 🙈 Youtube & Discord
-- [Youtube](https://www.youtube.com/@MaDHouSe79) for videos
-- [Discord](https://discord.gg/cEMSeE9dgS)
+# 🙈 Youtube
+- [Youtube](https://www.youtube.com/c/MaDHouSe79)
 
 # LICENSE
 [GPL LICENSE](./LICENSE)<br />
