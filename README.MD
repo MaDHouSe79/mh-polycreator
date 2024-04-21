@@ -23,7 +23,7 @@
 </p>
 
 
-### mh-polycreator (dev tool)
+### mh-polycreator (dev tool) (QB/ESX/Standalone)
 - This script wil help you to create polyzones ingame very easy
 - you are able to make the polyzones very precise where you want it.
 - as big or small as you want, all the code you need for your polyzone will be saved inside `configs/zones.lua`
