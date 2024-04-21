@@ -38,7 +38,7 @@ local function WriteZoneData(id, zones, street)
     path = path:gsub('//', '/')..'/configs/zones.lua'
     local file = io.open(path, 'a+')
     local createDate = generateDateTime()
-    local sender = GetPlayer(src).PlayerData
+    local sender = GetPlayerName(src)
     file:write(("-- %s,\n"):format(String('created_zone', zoneName, street)))
     file:write(("-- %s,\n"):format(String('created_by', sender.name, createDate)))
     file:write("Config.Zones['"..('%s'):format(zoneName).."'] = {\n")
