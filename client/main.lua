@@ -1,16 +1,12 @@
 --[[ ===================================================== ]]--
---[[         QBCore Poly Creator Script by MaDHouSe        ]]--
+--[[           MH Poly Creator Script by MaDHouSe          ]]--
 --[[ ===================================================== ]]--
-
-local QBCore = exports['qb-core']:GetCoreObject()
-local PlayerData = {}
 local ViewEnabled = false
 local FreeAim = false
 local vectors = {}
 local zones = {}
 local height = 2.0
 local tmpPoly = nil
-
 
 local function GetStreetName(entity)
     return GetStreetNameFromHashKey(GetStreetNameAtCoord(GetEntityCoords(entity).x, GetEntityCoords(entity).y, GetEntityCoords(entity).z))
@@ -91,14 +87,12 @@ local function RunViewThread()
     end)
 end
 
-AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
-    PlayerData = QBCore.Functions.GetPlayerData()
+AddEventHandler('playerSpawned', function()
     RunViewThread()
 end)
 
 AddEventHandler('onResourceStart', function(resource)
     if resource == GetCurrentResourceName() then
-        PlayerData = QBCore.Functions.GetPlayerData()
         RunViewThread()
     end
 end)
