@@ -1,18 +1,16 @@
 --[[ ===================================================== ]]--
---[[         QBCore Poly Creator Script by MaDHouSe        ]]--
+--[[           MH Poly Creator Script by MaDHouSe          ]]--
 --[[ ===================================================== ]]--
-
-local QBCore = exports['qb-core']:GetCoreObject()
 local isCreateMode = false 
 local zoneName = nil
 local blipName = nil
 
-QBCore.Commands.Add(Config.Commands.createzone, Lang:t('data.create_zone'), {{name='name', help=Lang:t('data.type_zone_name')}}, true, function(source, args)
+RegisterCommand(Config.Commands.createzone, function(source, args, rawCommand)
     local src = source
-	if args[1] and tostring(args[1]) ~= nil then
+    if args[1] and tostring(args[1]) ~= nil then
         zoneName = tostring(args[1])
         if Config.Zones[zoneName] then
-            TriggerClientEvent('QBCore:Notify', src, Lang:t('notify.zone_already_exsist'), "error")
+            Notify(src, String('zone_already_exsist'), "error")
         else
             if args[2] and tostring(args[2]) ~= nil then
                 blipName = tostring(args[2])
@@ -20,12 +18,12 @@ QBCore.Commands.Add(Config.Commands.createzone, Lang:t('data.create_zone'), {{na
             TriggerClientEvent('mh-polycreator:client:ToggleCreateMode', src, true)
         end       
     else
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('notify.no_zone_name'), "error")
+        Notify(src, String('no_zone_name'), "error")
     end
-end, 'admin')
+end, true)
 
 local function addZeroForLessThan10(number)
-    if(number < 10) then return 0 .. number else return number end
+    if (number < 10) then return 0 .. number else return number end
 end
 
 local function generateDateTime()
@@ -40,9 +38,9 @@ local function WriteZoneData(id, zones, street)
     path = path:gsub('//', '/')..'/configs/zones.lua'
     local file = io.open(path, 'a+')
     local createDate = generateDateTime()
-    local sender = QBCore.Functions.GetPlayer(src).PlayerData
-    file:write(("-- %s,\n"):format(Lang:t('data.created_zone', {zone = zoneName, street = street})))
-    file:write(("-- %s,\n"):format(Lang:t('data.created_by', {name = sender.name, date = createDate})))
+    local sender = GetPlayer(src).PlayerData
+    file:write(("-- %s,\n"):format(String('created_zone', zoneName, street)))
+    file:write(("-- %s,\n"):format(String('created_by', sender.name, createDate)))
     file:write("Config.Zones['"..('%s'):format(zoneName).."'] = {\n")
     file:write("    ['Zone'] = {\n")
     file:write("        ['Shape'] = {\n")
@@ -59,7 +57,7 @@ local function WriteZoneData(id, zones, street)
     end
     file:write("}\n")
     file:close()
-    TriggerClientEvent('QBCore:Notify', src, Lang:t('notify.zone_saved'), "success")
+    Notify(src, String('zone_saved'), "success")
     TriggerClientEvent('mh-polycreator:client:ToggleCreateMode', src, false)
 end
 
