@@ -104,3 +104,8 @@ AddEventHandler('mh-polycreator:client:ToggleCreateMode', function(state)
     zones = {}
     if tmpPoly ~= nil then tmpPoly:destroy() end
 end)
+
+RegisterNetEvent('mh-polycreator:client:notify')
+AddEventHandler('mh-polycreator:client:notify', function(message, type, length)
+    Notify(message, type, length)
+end)
