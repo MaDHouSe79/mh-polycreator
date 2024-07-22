@@ -11,7 +11,7 @@ if GetResourceState("es_extended") ~= 'missing' then
     end
 
     function Notify(src, message, type, length)
-        TriggerClientEvent("mh-fuel:client:notify", src, message, type, length)
+        TriggerClientEvent("mh-polycreator:client:notify", src, message, type, length)
     end
 
 elseif GetResourceState("qb-core") ~= 'missing' then
@@ -22,6 +22,6 @@ elseif GetResourceState("qb-core") ~= 'missing' then
     end
 
     function Notify(src, message, type, length)
-        TriggerClientEvent("mh-fuel:client:notify", src, message, type, length)
+        TriggerClientEvent("mh-polycreator:client:notify", src, message, type, length)
     end
 end
