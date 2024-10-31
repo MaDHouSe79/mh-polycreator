@@ -7,7 +7,7 @@ game 'gta5'
 
 author 'MaDHouSe'
 description 'MH Poly Creator System'
-version '1.0'
+version '1.0.0'
 
 shared_scripts {
     '@ox_lib/init.lua',
