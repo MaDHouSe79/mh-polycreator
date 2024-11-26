@@ -35,7 +35,5 @@ server_scripts {
 	'server/update.lua',
 }
 
-dependencies {'PolyZone', 'ox_lib', 'mh-core'}
-
 
 lua54 'yes'
