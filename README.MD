@@ -18,11 +18,6 @@
   </a> 
 </p>
 
-<p align="center">
-  <img alig src="https://github-profile-trophy.vercel.app/?username=MaDHouSe79&margin-w=15&column=6" />
-</p>
-
-
 ### mh-polycreator (dev tool) (QB/ESX/Standalone)
 - This script wil help you to create polyzones ingame very easy
 - you are able to make the polyzones very precise where you want it.
